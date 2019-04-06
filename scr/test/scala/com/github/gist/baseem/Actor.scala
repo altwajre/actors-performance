@@ -118,9 +118,4 @@ object Actor {
 }
 
 private class Node(val a: Any) extends AtomicReference[Node]
-//Usage example that creates an actor that will, after it's first message is received, Die
-//import Actor._
-//implicit val e: java.util.concurrent.Executor = java.util.concurrent.Executors.newCachedThreadPool
-//val actor = Actor(self => msg => { println("self: " + self + " got msg " + msg); Die })
-//actor ! "foo"
-//actor ! "foo"
+
